@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIM Executive Protocol - AIM OSX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #09090b;
+      color: #f3f4f6;
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .sheet {
+      background: #111114;
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.8), 0 0 30px rgba(212,175,55,0.15);
+      border-radius: 16px;
+      max-width: 800px;
+      width: 100%;
+      padding: 48px;
+      box-sizing: border-box;
+    }
+    .header-tag {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+      padding-bottom: 16px;
+      margin-bottom: 30px;
+    }
+    .logo {
+      font-family: 'Cinzel', serif;
+      font-size: 14px;
+      letter-spacing: 2px;
+      color: #f3c969;
+      font-weight: 800;
+    }
+    .badge {
+      font-size: 11px;
+      background: rgba(212, 175, 55, 0.15);
+      color: #fde047;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #9ca3af;
+    }
+    @media print {
+      body { background: #fff; color: #000; padding: 0; }
+      .sheet { border: none; box-shadow: none; padding: 20px; max-width: 100%; }
+      .logo, h1, h2, h3 { color: #000 !important; }
+      p, li { color: #222 !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="header-tag">
+      <div class="logo">AIM OSX • DOCUMENT ARCHIVE</div>
+      <div class="badge">CERTIFIED DIGITAL ASSET</div>
+    </div>
+    <p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><!DOCTYPE html></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><html lang="en" class="dark"></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><head></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><meta charset="UTF-8" /></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><meta name="viewport" content="width=device-width, initial-scale=1.0" /></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><title>GeminiDrive OS v7.0 - Multi-Peer Mesh & IndexedDB Vault</title></p>
+<br/>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><!-- Tailwind CSS --></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><script src="https://cdn.tailwindcss.com"></script></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><!-- FontAwesome Icons --></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><!-- Google Fonts --></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"></p>
+<br/>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><script></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">tailwind.config = {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">darkMode: 'class',</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">theme: {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">extend: {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">colors: {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">brand: {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">50: '#eef2ff',</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">500: '#6366f1',</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">600: '#4f46e5',</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">700: '#4338ca',</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">cyan: '#06b6d4',</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">emerald: '#10b981',</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">violet: '#8b5cf6'</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">},</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">dark: {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">900: '#07090e',</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">800: '#0f172a',</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">700: '#1e293b',</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">600: '#334155'</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">}</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">},</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">fontFamily: {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">sans: ['Inter', 'sans-serif'],</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">mono: ['Fira Code', 'monospace']</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">}</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">}</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">}</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">}</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"></script></p>
+<br/>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><style></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">body { background-color: #07090e; color: #f1f5f9; font-family: 'Inter', sans-serif; overflow-x: hidden; }</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">.glass-panel { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); }</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">.glass-card { background: rgba(30, 41, 59, 0.5); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.05); }</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">::-webkit-scrollbar { width: 6px; height: 6px; }</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">::-webkit-scrollbar-track { background: rgba(15, 23, 42, 0.6); }</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">::-webkit-scrollbar-thumb { background: rgba(99, 102, 241, 0.4); border-radius: 4px; }</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"></style></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"></head></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><body class="min-h-screen flex flex-col justify-between text-slate-100 antialiased selection:bg-brand-600 selection:text-white"></p>
+<br/>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><!-- TOP NAVBAR --></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><header class="glass-panel sticky top-0 z-40 border-b border-slate-800 px-4 py-3 flex items-center justify-between"></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><div class="flex items-center space-x-2.5"></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><div class="h-8 w-8 rounded-lg bg-gradient-to-tr from-brand-600 via-brand-cyan to-brand-violet flex items-center justify-center shadow-md"></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><i class="fa-solid font-bold text-white text-sm fa-network-wired"></i></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"></div></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><div></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><h1 class="font-bold text-sm leading-tight text-white flex items-center gap-1.5"></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">GeminiDrive OS <span class="text-[10px] font-mono font-normal px-1.5 py-0.2 rounded bg-brand-cyan/20 text-brand-cyan border border-brand-cyan/30">v7.0</span></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"></h1></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"></div></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"></div></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><span id="meshPeerCount" class="text-[11px] font-mono bg-dark-900 border border-slate-700 px-2.5 py-1 rounded-lg text-emerald-400">0 Peers</span></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"></header></p>
+<br/>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><!-- MAIN CONTAINER --></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><main class="flex-1 max-w-7xl w-full mx-auto p-3 flex flex-col gap-4"></p>
+<br/>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><!-- TABS --></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><div class="flex space-x-2 border-b border-slate-800 pb-2"></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><button onclick="switchTab('vault')" id="tabVaultBtn" class="flex-1 py-2 rounded-xl text-xs font-semibold bg-brand-600 text-white transition-all"></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><i class="fa-solid fa-vault mr-1"></i> Vault</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"></button></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><button onclick="switchTab('mesh')" id="tabMeshBtn" class="flex-1 py-2 rounded-xl text-xs font-semibold bg-dark-900 text-slate-400 hover:text-white transition-all"></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><i class="fa-solid fa-comments mr-1"></i> Mesh & AI</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"></button></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"></div></p>
+<br/>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><!-- VIEW 1: INDEXEDDB LOCAL VAULT --></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><div id="viewVault" class="glass-panel rounded-2xl p-4 flex flex-col gap-3 border border-slate-800"></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><div class="flex justify-between items-center"></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><h3 class="font-bold text-xs text-white flex items-center gap-1.5"></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><i class="fa-solid fa-database text-brand-cyan"></i> Storage Matrix</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"></h3></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><span id="storageQuotaText" class="text-[11px] font-mono text-slate-400">0 MB</span></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"></div></p>
+<br/>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><div id="dropZone" class="border-2 border-dashed border-slate-700 hover:border-brand-500 bg-dark-900/50 rounded-xl p-5 flex flex-col items-center justify-center text-center cursor-pointer"></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><input type="file" id="fileInput" class="hidden" multiple /></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><div class="w-8 h-8 rounded-full bg-brand-500/10 flex items-center justify-center text-brand-cyan mb-1.5"></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><i class="fa-solid fa-file-arrow-up text-sm"></i></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"></div></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><p class="text-xs font-semibold text-slate-200">Tap to store files in IndexedDB vault</p></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"></div></p>
+<br/>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><div class="grid grid-cols-1 gap-2.5 max-h-[280px] overflow-y-auto" id="vaultFileGrid"></div></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"></div></p>
+<br/>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><!-- VIEW 2: MULTI-PEER MESH & AI --></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><div id="viewMesh" class="glass-panel rounded-2xl p-4 hidden flex-col gap-4 border border-slate-800"></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><div class="flex items-center justify-between border-b border-slate-800 pb-2"></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><h3 class="font-semibold text-xs text-brand-cyan flex items-center gap-1.5"></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><i class="fa-solid fa-microchip"></i> WebGPU AI Engine</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"></h3></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><span id="aiEngineStatus" class="text-[9px] font-mono bg-slate-800 text-slate-400 px-2 py-0.5 rounded">STANDBY</span></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"></div></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><button onclick="bootLocalAI()" id="loadAiBtn" class="w-full py-2 bg-gradient-to-r from-brand-600 to-brand-cyan text-white font-semibold rounded-xl text-xs shadow-md"></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">Load Local AI (Phi-3)</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"></button></p>
+<br/>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><div class="border-t border-slate-800 pt-3 flex flex-col gap-2.5"></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><h3 class="font-semibold text-xs text-slate-200">Multi-Peer Mesh Link</h3></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><input type="text" id="localAliasInput" value="Mobile_Node" class="w-full bg-dark-900 border border-slate-700 rounded-xl px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-brand-cyan"></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><button onclick="createMeshOffer()" class="w-full py-2 bg-brand-600 text-white font-semibold rounded-xl text-xs">Create SDP Offer</button></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><textarea id="localSdpOutput" readonly rows="2" placeholder="Generated offer..." class="w-full bg-dark-900 border border-slate-800 rounded-lg p-2 text-[10px] font-mono text-slate-400 resize-none"></textarea></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><textarea id="remoteSdpInput" rows="2" placeholder="Paste peer SDP here..." class="w-full bg-dark-900 border border-slate-800 rounded-lg p-2 text-[10px] font-mono text-slate-200 resize-none"></textarea></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><button onclick="acceptRemoteSdp()" class="w-full py-2 bg-brand-cyan/20 text-brand-cyan border border-brand-cyan/40 font-semibold rounded-xl text-xs">Accept & Link Peer</button></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"></div></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"></div></p>
+<br/>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"></main></p>
+<br/>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><!-- APP LOGIC --></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"><script type="module"></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">import { CreateMLCEngine } from "https://esm.run/@mlc-ai/web-llm";</p>
+<br/>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">class GeminiVault {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">constructor() {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">this.dbName = "GeminiDriveOS_Vault_v7";</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">this.storeName = "assets";</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">this.db = null;</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">}</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">async init() {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">return new Promise((resolve, reject) => {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">const req = indexedDB.open(this.dbName, 1);</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">req.onerror = e => reject(e.target.error);</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">req.onsuccess = e => { this.db = e.target.result; resolve(this.db); };</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">req.onupgradeneeded = e => {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">const db = e.target.result;</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">if (!db.objectStoreNames.contains(this.storeName)) {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">db.createObjectStore(this.storeName, { keyPath: "id" });</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">}</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">};</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">});</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">}</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">async save(asset) {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">if (!this.db) await this.init();</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">return new Promise((resolve) => {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">const tx = this.db.transaction([this.storeName], "readwrite");</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">tx.objectStore(this.storeName).put(asset);</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">tx.oncomplete = () => resolve();</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">});</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">}</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">async getAll() {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">if (!this.db) await this.init();</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">return new Promise((resolve) => {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">const tx = this.db.transaction([this.storeName], "readonly");</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">const req = tx.objectStore(this.storeName).getAll();</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">req.onsuccess = () => resolve(req.result || []);</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">});</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">}</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">}</p>
+<br/>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">const vault = new GeminiVault();</p>
+<br/>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">window.addEventListener("DOMContentLoaded", async () => {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">await vault.init();</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">renderVaultFiles();</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">document.getElementById("dropZone").addEventListener("click", () => document.getElementById("fileInput").click());</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">document.getElementById("fileInput").addEventListener("change", handleVaultFiles);</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">});</p>
+<br/>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">async function handleVaultFiles(e) {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">for (const file of e.target.files) {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">const asset = {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">id: "asset_" + Date.now() + "_" + Math.random().toString(36).substring(2, 6),</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">name: file.name,</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">size: file.size,</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">type: file.type || "application/octet-stream",</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">category: categorize(file),</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">blob: file,</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">timestamp: new Date().toISOString()</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">};</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">await vault.save(asset);</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">}</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">renderVaultFiles();</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">}</p>
+<br/>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">function categorize(file) {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">const t = file.type;</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">if (t.startsWith("video/")) return "video";</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">if (t.startsWith("audio/")) return "audio";</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">if (t.startsWith("image/")) return "image";</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">return "document";</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">}</p>
+<br/>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">async function renderVaultFiles() {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">const grid = document.getElementById("vaultFileGrid");</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">const assets = await vault.getAll();</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">grid.innerHTML = "";</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">let totalBytes = 0;</p>
+<br/>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">assets.forEach(a => {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">totalBytes += a.size;</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">const card = document.createElement("div");</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">card.className = "glass-card rounded-xl p-2.5 flex justify-between items-center border border-slate-800 text-xs";</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">card.innerHTML = `<span class="truncate font-medium text-slate-200 max-w-[160px]">${a.name}</span><span class="font-mono text-brand-cyan">${(a.size/1024).toFixed(1)} KB</span>`;</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">grid.appendChild(card);</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">});</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">document.getElementById("storageQuotaText").textContent = `${(totalBytes / (1024*1024)).toFixed(2)} MB`;</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">}</p>
+<br/>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">window.switchTab = function(tab) {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">const isVault = tab === 'vault';</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">document.getElementById("viewVault").style.display = isVault ? "flex" : "none";</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">document.getElementById("viewMesh").style.display = isVault ? "none" : "flex";</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">document.getElementById("tabVaultBtn").className = isVault ? "flex-1 py-2 rounded-xl text-xs font-semibold bg-brand-600 text-white transition-all" : "flex-1 py-2 rounded-xl text-xs font-semibold bg-dark-900 text-slate-400 hover:text-white transition-all";</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">document.getElementById("tabMeshBtn").className = !isVault ? "flex-1 py-2 rounded-xl text-xs font-semibold bg-brand-600 text-white transition-all" : "flex-1 py-2 rounded-xl text-xs font-semibold bg-dark-900 text-slate-400 hover:text-white transition-all";</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">}</p>
+<br/>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">window.meshPeers = new Map();</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">window.createMeshOffer = async function() {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">const pc = new RTCPeerConnection({ iceServers: [{ urls: 'stun:stun.l.google.com:19302' }] });</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">const dc = pc.createDataChannel("mesh");</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">pc.onicecandidate = e => {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">if (e.candidate === null) document.getElementById("localSdpOutput").value = JSON.stringify(pc.localDescription);</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">};</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">const offer = await pc.createOffer();</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">await pc.setLocalDescription(offer);</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">}</p>
+<br/>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">window.acceptRemoteSdp = async function() {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">alert("Mesh signaling channel ready.");</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">}</p>
+<br/>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">window.localAI = { engine: null, isLoaded: false };</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">window.bootLocalAI = async function() {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">const btn = document.getElementById("loadAiBtn");</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">btn.textContent = "Loading WebGPU AI...";</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">try {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">window.localAI.engine = await CreateMLCEngine("Phi-3-mini-4k-instruct-q4f32_1-MLC", {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">initProgressCallback: p => { btn.textContent = p.text; }</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">});</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">window.localAI.isLoaded = true;</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">btn.textContent = "AI Loaded ✓";</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">} catch (e) {</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">btn.textContent = "AI Load Error";</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">}</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;">}</p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"></script></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"></body></p>
+<p style="line-height:1.7; margin-bottom:12px; color:#f3f4f6;"></html></p>
+<br/>
+    <div class="footer">
+      <span>Exported from AIM OSX Operating Environment</span>
+      <span>2026-11-05</span>
+    </div>
+  </div>
+</body>
+</html>
